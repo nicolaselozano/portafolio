@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolas Lozano — Portafolio</title>
+  <meta name="description" content="Portafolio de Nicolas Lozano: desarrollador Back-End / Full-Stack. Java, C#, NodeJs, TypeScript, React, NextJS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__brand">
+        <img src="asset/pfp1.webp" alt="Perfil Nicolas Lozano" class="nav__pfp" />
+        <span>Nicolas Lozano</span>
+      </a>
+      <ul class="nav__links">
+        <li><a class="nav__link" href="#sobre-mi-es">ES</a></li>
+        <li><a class="nav__link" href="#sobre-mi-en">EN</a></li>
+        <li><a class="nav__link" href="#contacto-es">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <aside class="sidebar" aria-label="Navegación de secciones">
+    <p class="sidebar__group">Inicio</p>
+    <a href="#inicio">Home</a>
+
+    <p class="sidebar__group">Español</p>
+    <a href="#sobre-mi-es">Sobre mí</a>
+    <a href="#habilidades-es">Habilidades</a>
+    <a href="#proyectos-es">Proyectos</a>
+    <a href="#contribuciones-es">Contribuciones</a>
+    <a href="#contacto-es">Contacto</a>
+
+    <p class="sidebar__group">English</p>
+    <a href="#sobre-mi-en">About me</a>
+    <a href="#habilidades-en">Skills</a>
+    <a href="#proyectos-en">Projects</a>
+    <a href="#contribuciones-en">Contributions</a>
+    <a href="#contacto-en">Contact</a>
+  </aside>
+
+  <main class="main">
+
+    <section id="inicio" class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="asset/home.webp" alt="" />
+      </div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Backend-Stack Developer</p>
+        <h1 class="hero__name">
+          Nicolas Lozano
+          <img src="asset/face_Pet.webp" alt="" aria-hidden="true" class="hero__pet" />
+        </h1>
+        <p class="hero__desc">
+          Desarrollo de aplicaciones back-end y full-stack con Java, C#, NodeJs y TypeScript.
+          En esta web vas a encontrar mis proyectos con su stack, desafíos y aprendizajes.
+        </p>
+        <div class="hero__actions">
+          <a href="#proyectos-es" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contacto-es" class="btn btn--ghost">Contacto</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="lang-divider" id="espanol"><span>Español</span></div>
+
+    <section id="sobre-mi-es" class="section reveal">
+      <h2 class="section__title">Sobre mí</h2>
+      <div class="about__intro">
+        <p class="about__greeting" data-greeting-es>¡Hola!</p>
+        <p class="about__phrase">Espero que estés teniendo un lindo <span data-day-es>día</span> </p>
+      </div>
+      <div class="bio">
+        <p>
+          Me encanta enfrentar y resolver desafíos en el área de programación,
+          y mi compromiso con la actualización constante me lleva a explorar
+          las últimas tecnologías.
+        </p>
+        <p>
+          Estudié en la UTN la Tecnicatura Universitaria en Programación, con un
+          enfoque sólido en <strong>API REST, Java y C#</strong>. Luego decidí mejorar
+          mis habilidades tecnológicas y me sumergí en un bootcamp <strong>"Henry"</strong>,
+          donde me especialicé en back-end con <strong>NodeJs, Express</strong> y
+          herramientas de front como <strong>React y Redux</strong>.
+          Actualmente trabajo con <strong>Java, C#, NextJS y TypeScript</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section id="habilidades-es" class="section reveal">
+      <h2 class="section__title">Habilidades</h2>
+
+      <h3 class="section__sub">Lenguajes de programación</h3>
+      <div class="chips">
+        <span class="chip">TypeScript</span><span class="chip">Java</span><span class="chip">C#</span>
+        <span class="chip">Python</span><span class="chip">JavaScript</span>
+      </div>
+
+      <h3 class="section__sub">Tecnologías</h3>
+      <div class="chips">
+        <span class="chip">Express</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span>
+        <span class="chip">Postman</span><span class="chip">Spring</span><span class="chip">.NET</span>
+        <span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Django</span>
+        <span class="chip">Docker</span><span class="chip">Sequelize</span><span class="chip">Auth0</span>
+        <span class="chip">Hibernate</span>
+      </div>
+
+      <h3 class="section__sub">Desarrollo web</h3>
+      <div class="chips">
+        <span class="chip">Back-End</span><span class="chip">Front-End</span>
+      </div>
+    </section>
+
+    <section id="proyectos-es" class="section reveal">
+      <h2 class="section__title">Proyectos destacados</h2>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">App de Auditorías 5S — Durlock</h3>
+          <p class="card__meta"> Dic.2025 - Ago. 2026 · Proyecto corporativo (Durlock / Etex Group)</p>
+          <p class="card__meta">Rol: <span>Full-Stack — API Spring Boot y app móvil con React + Capacitor</span></p>
+        </div>
+        <p class="card__desc">
+          Aplicación interna para la gestión de auditorías de la metodología 5S en las
+          plantas de Durlock: creación y calificación de auditorías, ciclos de auditoría
+          con resultados por pilar, desviaciones con severidad y planes de acción con
+          seguimiento de vencimientos.
+        </p>
+        <ul class="card__list">
+          <li>Autenticación JWT y OAuth2 (Google), además de API keys categorizadas por cliente (app móvil, web admin, integraciones).</li>
+          <li>Push notifications vía Firebase Cloud Messaging con programador de notificaciones de vencimientos de auditorías y planes de acción.</li>
+          <li>Exportación/importación de datos con FastExcel, multimedia en Cloudinary, permisos por rol y búsqueda global.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Java 17</span><span class="chip">Spring Boot 3</span><span class="chip">PostgreSQL</span>
+          <span class="chip">Spring Security</span><span class="chip">Hibernate</span><span class="chip">MapStruct</span>
+          <span class="chip">React 19</span><span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span>
+          <span class="chip">Capacitor</span><span class="chip">Firebase</span><span class="chip">Cloudinary</span>
+        </div>
+        <p class="card__meta">Herramientas: <span>Docker, SpringDoc (OpenAPI), Bucket4j (rate limiting), Zustand, Axios</span></p>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">Back-End Developer – Fintech</h3>
+          <p class="card__meta">Ene. 2025 – Feb. 2025 · Hackathon (empresa real IUPI)</p>
+          <p class="card__meta">Rol: <span>Back-End — Spring Boot y PostgreSQL</span></p>
+        </div>
+        <p class="card__desc">
+          IUPI es una aplicación financiera diseñada para empoderar a los usuarios
+          en la gestión y crecimiento de su patrimonio.
+        </p>
+        <ul class="card__list">
+          <li>Implementación de autenticación con Google y Apple ID.</li>
+          <li>Autenticación JWT para seguridad y sesiones de usuario.</li>
+          <li>Sistema de recomendación de inversiones basado en Riesgos (usando datos de APIs financieras).</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">PostgreSQL</span>
+          <span class="chip">React</span><span class="chip">Redux</span><span class="chip">Axios</span><span class="chip">Chart.js</span>
+        </div>
+        <p class="card__meta">Herramientas: <span>Notion, GitHub, Render, Firebase</span></p>
+        <div class="card__links">
+          <a class="link" href="https://github.com/nicolaselozano/hackathon-fintech" target="_blank" rel="noopener">Repositorio</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">Full-Stack Developer – TechSocial (red social)</h3>
+          <p class="card__meta">Oct. 2024 – Nov. 2024 · Pasantía-Simulación en No Country</p>
+          <p class="card__meta">Rol: <span>Front-End (React + Zustand) y Back-End (Express + TypeORM)</span></p>
+        </div>
+        <p class="card__desc">
+          Proyecto de red social orientada a la comunidad de programadores, donde los
+          usuarios pueden crear perfiles, publicar, seguir a otros usuarios y
+          comunicarse en tiempo real.
+        </p>
+        <ul class="card__list">
+          <li>Interfaces de usuario en React, con diseño de perfiles personalizados y vista de chat de usuarios.</li>
+          <li>Sistema de mensajería en tiempo real con Socket.IO, middlewares personalizados y autenticación con Auth0.</li>
+          <li>Diseño y administración de entidades de usuario y mensajes en MySQL.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">NodeJs</span><span class="chip">TypeScript</span><span class="chip">Express</span>
+          <span class="chip">MySQL</span><span class="chip">Auth0</span><span class="chip">Docker</span>
+          <span class="chip">React</span><span class="chip">Socket.IO</span>
+        </div>
+        <div class="card__links">
+          <a class="link" href="https://github.com/nicolaselozano/TecnoSocial-redsocial-" target="_blank" rel="noopener">Repositorio</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">Back-End Developer – Tasty Recetas</h3>
+          <p class="card__meta">Sep. 2024 – Oct. 2024 · Pasantía-Simulación en No Country</p>
+          <p class="card__meta">Rol: <span>Back-End — entidades, controladores, servicios, middlewares e integración de APIs</span></p>
+        </div>
+        <p class="card__desc">
+          Proyecto de galería de recetas donde los usuarios pueden crear perfiles,
+          buscar, filtrar, comentar, puntuar y subir recetas.
+        </p>
+        <ul class="card__list">
+          <li>Integración de Auth0 para autenticación.</li>
+          <li>Contribución en las vistas de perfil de usuario y comentarios.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">.NET 8</span><span class="chip">C#</span><span class="chip">EF</span>
+          <span class="chip">Angular</span><span class="chip">TypeScript</span><span class="chip">MySQL</span>
+          <span class="chip">Auth0</span><span class="chip">Docker</span>
+        </div>
+        <div class="card__links">
+          <a class="link" href="https://github.com/nicolaselozano/TastyRecetas" target="_blank" rel="noopener">Repositorio</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">ProyectBox (portafolio)</h3>
+          <p class="card__meta">Rol: <span>Full-Stack Developer</span></p>
+        </div>
+        <p class="card__desc">
+          Proyecto con el fin de brindar un portafolio que sea personalizable e intuitivo.
+          Desarrollo de landing pages, dashboards y aplicaciones online.
+          Diseño de interfaces y elementos frontend para compartir tus proyectos,
+          arte, música, etc. y así mostrar tus habilidades a los demás.
+        </p>
+        <img class="card__image" src="https://github.com/user-attachments/assets/e219a61e-adae-42b3-8184-5a34ebab0ee8" alt="Captura ProyectBox" />
+        <div class="chips">
+          <span class="chip">TypeScript</span><span class="chip">NextJS</span><span class="chip">PostgreSQL</span>
+          <span class="chip">.NET 8</span><span class="chip">ASP Core</span><span class="chip">Auth0</span>
+          <span class="chip">Tailwind</span><span class="chip">Cloudinary</span><span class="chip">Docker</span><span class="chip">NodeJs</span>
+        </div>
+        <div class="card__links">
+          <a class="link" href="https://github.com/nicolaselozano/ProyectBox" target="_blank" rel="noopener">Repositorio</a>
+          <a class="btn btn--small btn--ghost" href="https://proyectbox-au5d.onrender.com/" target="_blank" rel="noopener">¡Explora ProyectBox!</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">Librería Apolo</h3>
+          <p class="card__meta">Rol: <span>Full-Stack Developer</span></p>
+        </div>
+        <p class="card__desc">
+          E-commerce de libros donde el usuario (logueado) puede hacer compras y almacenar
+          productos en el carrito. Cuenta con un sistema de reviews donde, una vez comprado
+          el libro, el usuario puede asignarle una puntuación y editarla si lo desea.
+          Además, incluye un rol de admin para gestionar productos: crear, desactivar,
+          editar y administrar usuarios.
+        </p>
+        <img class="card__image" src="https://github.com/user-attachments/assets/11d04133-cca3-434e-bb16-29846d6a2a5e" alt="Captura Librería Apolo" />
+        <div class="chips">
+          <span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">PostgreSQL</span>
+          <span class="chip">Sequelize</span><span class="chip">Auth0</span><span class="chip">Tailwind</span>
+          <span class="chip">Cloudinary</span><span class="chip">NodeJs</span>
+        </div>
+        <div class="card__links">
+          <a class="link" href="https://github.com/EcommerceProyect/BookStore-E-commerce" target="_blank" rel="noopener">Repositorio</a>
+          <a class="btn btn--small btn--ghost" href="https://bookstore-e-commerce-z27y.onrender.com/" target="_blank" rel="noopener">¡Explora Librería Apolo!</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">The Dog Sanctuary</h3>
+          <p class="card__meta">Rol: <span>Full-Stack Developer</span></p>
+        </div>
+        <p class="card__desc">
+          Proyecto de tienda de mascotas, donde puedes buscar por raza diferentes perritos
+          y también crear razas. Utiliza la API Dog para obtener los datos de las razas
+          que se muestran.
+        </p>
+        <div class="chips">
+          <span class="chip">NodeJs</span><span class="chip">JavaScript</span><span class="chip">React</span>
+          <span class="chip">PostgreSQL</span><span class="chip">Sequelize</span><span class="chip">Redux Toolkit</span>
+        </div>
+        <div class="card__links">
+          <a class="link" href="https://github.com/nicolaselozano/PI-DOGS-nicolaselozano" target="_blank" rel="noopener">The Dog Sanctuary</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="contribuciones-es" class="section reveal">
+      <h2 class="section__title">Contribuciones</h2>
+      <p class="section__desc">Otros proyectos donde colaboré como equipo.</p>
+      <ul class="contrib">
+        <li><a class="link" href="https://github.com/EcommerceProyect/BookStore-E-commerce" target="_blank" rel="noopener">BookStore-E-commerce</a></li>
+        <li><a class="link" href="https://github.com/TechZoneDevs/back" target="_blank" rel="noopener">TechZone</a></li>
+      </ul>
+    </section>
+
+    <section id="contacto-es" class="section reveal">
+      <h2 class="section__title">Contacto</h2>
+      <ul class="contact">
+        <li>✉️ <a class="link" href="mailto:nicoeloza12@gmail.com">nicoeloza12@gmail.com</a></li>
+        <li>💼 <a class="link" href="https://www.linkedin.com/in/nicoelozano/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li>🌐 <a class="link" href="https://proyectbox-au5d.onrender.com/" target="_blank" rel="noopener">ProyectBox (portafolio)</a></li>
+        <li>🐙 <a class="link" href="https://github.com/nicolaselozano" target="_blank" rel="noopener">GitHub — nicolaselozano</a></li>
+      </ul>
+
+      <h3 class="section__sub">¡Hablemos!</h3>
+      <p class="section__desc">
+        ¡Siéntete libre de contactarme para discutir oportunidades, colaboraciones o
+        simplemente charlar sobre desarrollo web! ¡Muchas gracias por el espacio! :D
+      </p>
+      <a href="https://github.com/nicolaselozano" target="_blank" rel="noopener" class="visitas">
+        <img class="visitas__badge" src="https://komarev.com/ghpvc/?username=nicolaselozano&color=blueviolet" alt="Visitas al Perfil" />
+      </a>
+    </section>
+
+    <div class="lang-divider" id="english"><span>English</span></div>
+
+    <section id="sobre-mi-en" class="section reveal">
+      <h2 class="section__title">About me</h2>
+      <div class="about__intro">
+        <p class="about__greeting" data-greeting-en>Hello!</p>
+        <p class="about__phrase">I hope you're having a great <span data-day-en>day</span></p>
+      </div>
+      <div class="bio">
+        <p>
+          I love facing challenges and solving them in the programming field, and my
+          commitment to constant improvement drives me to explore the latest technologies.
+        </p>
+        <p>
+          I studied the University Technician in Programming at UTN, with a solid focus
+          on <strong>REST APIs, Java, and C#</strong>. Then I decided to improve my tech skills and
+          immersed myself in a <strong>"Henry"</strong> bootcamp, where I specialized in back-end
+          development with <strong>NodeJs, Express</strong> and front-end tools like
+          <strong>React and Redux</strong>.
+          Currently I work with <strong>Java, C#, NextJS, and TypeScript</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section id="habilidades-en" class="section reveal">
+      <h2 class="section__title">Skills</h2>
+
+      <h3 class="section__sub">Programming languages</h3>
+      <div class="chips">
+        <span class="chip">TypeScript</span><span class="chip">Java</span><span class="chip">C#</span>
+        <span class="chip">Python</span><span class="chip">JavaScript</span>
+        <span class="chip">HTML</span><span class="chip">CSS</span>
+      </div>
+
+      <h3 class="section__sub">Technologies</h3>
+      <div class="chips">
+        <span class="chip">Express</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span>
+        <span class="chip">Postman</span><span class="chip">Spring</span><span class="chip">.NET</span>
+        <span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Django</span>
+        <span class="chip">Docker</span><span class="chip">Sequelize</span><span class="chip">Auth0</span>
+        <span class="chip">Hibernate</span>
+      </div>
+
+      <h3 class="section__sub">Web development</h3>
+      <div class="chips">
+        <span class="chip">Back-End</span><span class="chip">Front-End</span>
+      </div>
+    </section>
+
+    <section id="proyectos-en" class="section reveal">
+      <h2 class="section__title">Featured projects</h2>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">5S Audit App — Durlock</h3>
+          <p class="card__meta">Dec. 2025 - Aug. 2026 · Corporate project (Durlock / Etex Group)</p>
+          <p class="card__meta">Role: <span>Full-Stack — Spring Boot API and React + Capacitor mobile app</span></p>
+        </div>
+        <p class="card__desc">
+          Internal application to manage 5S methodology audits across Durlock's plants:
+          audit creation and scoring, audit cycles with per-pillar results, deviations
+          with severity levels, and action plans with expiration tracking.
+        </p>
+        <ul class="card__list">
+          <li>JWT and OAuth2 (Google) authentication, plus categorized API keys per client (mobile app, admin web, integrations).</li>
+          <li>Push notifications via Firebase Cloud Messaging, with a scheduler for expiring audits and action plans.</li>
+          <li>Data export/import with FastExcel, multimedia on Cloudinary, role-based permissions, and global search.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Java 17</span><span class="chip">Spring Boot 3</span><span class="chip">PostgreSQL</span>
+          <span class="chip">Spring Security</span><span class="chip">Hibernate</span><span class="chip">MapStruct</span>
+          <span class="chip">React 19</span><span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span>
+          <span class="chip">Capacitor</span><span class="chip">Firebase</span><span class="chip">Cloudinary</span>
+        </div>
+        <p class="card__meta">Tools: <span>Docker, SpringDoc (OpenAPI), Bucket4j (rate limiting), Zustand, Axios</span></p>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">Back-End Developer – Fintech</h3>
+          <p class="card__meta">Jan. 2025 – Feb. 2025 · Hackathon (real company IUPI)</p>
+          <p class="card__meta">Role: <span>Back-End — Spring Boot and PostgreSQL</span></p>
+        </div>
+        <p class="card__desc">
+          IUPI is a financial app designed to empower users in the management and growth
+          of their assets.
+        </p>
+        <ul class="card__list">
+          <li>Implemented authentication with Google and Apple ID.</li>
+          <li>JWT authentication for security and user sessions.</li>
+          <li>Risk-based investment recommendation system (using data from financial APIs).</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">PostgreSQL</span>
+          <span class="chip">React</span><span class="chip">Redux</span><span class="chip">Axios</span><span class="chip">Chart.js</span>
+        </div>
+        <p class="card__meta">Tools: <span>Notion, GitHub, Render, Firebase</span></p>
+        <div class="card__links">
+          <a class="link" href="https://github.com/nicolaselozano/hackathon-fintech" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">Full-Stack Developer – TechSocial (social network)</h3>
+          <p class="card__meta">Oct. 2024 – Nov. 2024 · Internship-Simulation at No Country</p>
+          <p class="card__meta">Role: <span>Front-End (React + Zustand) and Back-End (Express + TypeORM)</span></p>
+        </div>
+        <p class="card__desc">
+          A social network project aimed at the programming community, where users can
+          create profiles, post, follow other users, and communicate in real time.
+        </p>
+        <ul class="card__list">
+          <li>User interfaces in React, including personalized profile designs and chat user views, and global states managed with Zustand.</li>
+          <li>Real-time messaging system with Socket.IO, custom middlewares, and authentication with Auth0.</li>
+          <li>Designed and managed user and message entities in MySQL.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">NodeJs</span><span class="chip">TypeScript</span><span class="chip">Express</span>
+          <span class="chip">MySQL</span><span class="chip">Auth0</span><span class="chip">Docker</span>
+          <span class="chip">React</span><span class="chip">Socket.IO</span>
+        </div>
+        <div class="card__links">
+          <a class="link" href="https://github.com/nicolaselozano/TecnoSocial-redsocial-" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">Back-End Developer – Tasty Recipes</h3>
+          <p class="card__meta">Sep. 2024 – Oct. 2024 · Internship-Simulation at No Country</p>
+          <p class="card__meta">Role: <span>Back-End — entities, controllers, services, middlewares and API integration</span></p>
+        </div>
+        <p class="card__desc">
+          Recipe gallery project where users can create profiles, search, filter,
+          comment, rate, and upload recipes.
+        </p>
+        <ul class="card__list">
+          <li>Auth0 integration for authentication.</li>
+          <li>Contributed to user profile views and comments.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip">.NET 8</span><span class="chip">C#</span><span class="chip">EF</span>
+          <span class="chip">Angular</span><span class="chip">TypeScript</span><span class="chip">MySQL</span>
+          <span class="chip">Auth0</span><span class="chip">Docker</span>
+        </div>
+        <div class="card__links">
+          <a class="link" href="https://github.com/nicolaselozano/TastyRecetas" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">ProyectBox (portfolio)</h3>
+          <p class="card__meta">Role: <span>Full-Stack Developer</span></p>
+        </div>
+        <p class="card__desc">
+          A project aimed at providing a customizable and intuitive portfolio.
+          Development of landing pages, dashboards, and online applications.
+          Interfaces and frontend elements were designed to share your projects,
+          art, music, etc., showcasing your skills to others.
+        </p>
+        <img class="card__image" src="https://github.com/user-attachments/assets/e219a61e-adae-42b3-8184-5a34ebab0ee8" alt="ProyectBox screenshot" />
+        <div class="chips">
+          <span class="chip">TypeScript</span><span class="chip">NextJS</span><span class="chip">PostgreSQL</span>
+          <span class="chip">.NET 8</span><span class="chip">ASP Core</span><span class="chip">Auth0</span>
+          <span class="chip">Tailwind</span><span class="chip">Cloudinary</span><span class="chip">Docker</span><span class="chip">NodeJs</span>
+        </div>
+        <div class="card__links">
+          <a class="link" href="https://github.com/nicolaselozano/ProyectBox" target="_blank" rel="noopener">Repository</a>
+          <a class="btn btn--small btn--ghost" href="https://proyectbox-au5d.onrender.com/" target="_blank" rel="noopener">Explore ProyectBox!</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">Apollo Library</h3>
+          <p class="card__meta">Role: <span>Full-Stack Developer</span></p>
+        </div>
+        <p class="card__desc">
+          A book e-commerce platform where logged-in users can make purchases and store
+          products in their cart. It features a review system where users, after purchasing
+          a book, can rate and edit their reviews. Additionally, it includes an admin role
+          to manage products: creating, deactivating, editing, and administering users.
+        </p>
+        <img class="card__image" src="https://github.com/user-attachments/assets/11d04133-cca3-434e-bb16-29846d6a2a5e" alt="Apollo Library screenshot" />
+        <div class="chips">
+          <span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">PostgreSQL</span>
+          <span class="chip">Sequelize</span><span class="chip">Auth0</span><span class="chip">Tailwind</span>
+          <span class="chip">Cloudinary</span><span class="chip">NodeJs</span>
+        </div>
+        <div class="card__links">
+          <a class="link" href="https://github.com/EcommerceProyect/BookStore-E-commerce" target="_blank" rel="noopener">Repository</a>
+          <a class="btn btn--small btn--ghost" href="https://bookstore-e-commerce-z27y.onrender.com/" target="_blank" rel="noopener">Explore Apollo Library!</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3 class="card__name">The Dog Sanctuary</h3>
+          <p class="card__meta">Role: <span>Full-Stack Developer</span></p>
+        </div>
+        <p class="card__desc">
+          A pet store project where you can search for dogs by breed and also create new breeds.
+          It uses the Dog API to fetch the breed data that is displayed.
+        </p>
+        <div class="chips">
+          <span class="chip">NodeJs</span><span class="chip">JavaScript</span><span class="chip">React</span>
+          <span class="chip">PostgreSQL</span><span class="chip">Sequelize</span><span class="chip">Redux Toolkit</span>
+        </div>
+        <div class="card__links">
+          <a class="link" href="https://github.com/nicolaselozano/PI-DOGS-nicolaselozano" target="_blank" rel="noopener">The Dog Sanctuary</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="contribuciones-en" class="section reveal">
+      <h2 class="section__title">Contributions</h2>
+      <p class="section__desc">Other projects where I collaborated as a team.</p>
+      <ul class="contrib">
+        <li><a class="link" href="https://github.com/EcommerceProyect/BookStore-E-commerce" target="_blank" rel="noopener">BookStore-E-commerce</a></li>
+        <li><a class="link" href="https://github.com/TechZoneDevs/back" target="_blank" rel="noopener">TechZone</a></li>
+      </ul>
+    </section>
+
+    <section id="contacto-en" class="section reveal">
+      <h2 class="section__title">Contact</h2>
+      <ul class="contact">
+        <li>✉️ <a class="link" href="mailto:nicoeloza12@gmail.com">nicoeloza12@gmail.com</a></li>
+        <li>💼 <a class="link" href="https://www.linkedin.com/in/nicoelozano/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li>🌐 <a class="link" href="https://proyectbox-au5d.onrender.com/" target="_blank" rel="noopener">ProyectBox (portfolio)</a></li>
+        <li>🐙 <a class="link" href="https://github.com/nicolaselozano" target="_blank" rel="noopener">GitHub — nicolaselozano</a></li>
+      </ul>
+
+      <h3 class="section__sub">Let's talk!</h3>
+      <p class="section__desc">
+        Feel free to reach out to discuss opportunities, collaborations, or just to
+        chat about web development! Thanks a lot for the space! :D
+      </p>
+      <a href="https://github.com/nicolaselozano" target="_blank" rel="noopener" class="visitas">
+        <img class="visitas__badge" src="https://komarev.com/ghpvc/?username=nicolaselozano&color=blueviolet" alt="Profile visits" />
+      </a>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__brand">
+        <img src="asset/OIG4.webp" alt="Logo ProyectBox" />
+        <span>Nicolas Lozano</span>
+      </div>
+      <ul class="footer__links">
+        <li><a href="mailto:nicoeloza12@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/nicoelozano/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/nicolaselozano" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+      <p class="footer__note">Gracias por el espacio </p>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
